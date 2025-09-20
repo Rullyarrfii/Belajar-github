@@ -1,0 +1,44 @@
+- Install Git
+- Git Bash
+- Git --version //melihat versi git
+- git init //untuk inisialisasi repo git di komputer
+- git add <file(s)> //untuk menambah file ke staging area
+- git add . //untuk menambah semua file ke staging area
+- git status //untuk mengetahui status repo (ada file berubah, ada file yang baru, ada file hilang)
+- git commit //untuk melakukan commit
+- git commit -m "" //commit dengan massage dengan kondisi file untrack/modified
+- git commit -am/-a -m "" //commit dengan massage dengan kondisi file modified
+- git config //untuk memasukan configurasi kedalam git
+- git config --global/local user.name "nama_repository" //untuk konfigurasi nama repository pada git
+- git config --global/local user.email "email" //untuk konfigurasi alamat email untuk repository git
+- git config --list //untuk melihat konfigurasi di repository git
+- git branch //untuk melihat branch
+- git branch name_branch //untuk membuat branch
+- git help //untuk mengetahui perintah git
+- git log //untuk melihat history commit
+- git log -2 //untuk melihat history commit 2 terakhir
+- git log --style.css //untuk melihat history commit yang berhubungan dengan style.css
+- git checkout 5digit_hash -- style.css //untuk mengembalikan sebuah commit style.css,lalu masuk ke staging area
+- git log --all --decorate --oneline --graph //visualisasi branch seperti di network github
+- alias graph="git log --all --decorate --oneline --graph" //hanya memanggil graph bisa memvisualisasikan
+- git checkout name_branch
+
+3 Area pada repo git
+- Working Tree -> inisialisasi folder menjadi repository git, lalu akan memantau aktivitas repo (ada perubahan/tidak)
+- Staging Area -> jika ada perubahan, maka disimpan di staging area (git add)
+- History -> menyimpan perubahan jika sudah oke (git commit)
+
+Staging Area, History => .git //masuk ke dalam folder .git defaultnya hide
+
+pwd -> Print Working Directory
+
+
+MERGE
+- fast forward => direct patch master to dosen/master to staff
+  ^ git merge dosen //posisi di master (git checkout master)
+  ^ git branch --merged //untuk mengetahui branch mana aja yang sudah di merge
+- Three-way merge
+  ^ dalam kondisi tidak direct patch
+  ^ harus memberikan pesan commitnya
+
+- git branch -d dosen //menghapus branch dosen (beda d dan D adalah jika D akan menghapus dalam kondisi apapun)
