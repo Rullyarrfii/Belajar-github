@@ -1,0 +1,47 @@
+menghubungkan git local dengan github
+- pastikan folder/repo local kita terinisialisasi
+Remote = Github, Gitlab, BitBucket
+Push = Local => Github
+Pull = Github => Local
+Fork = Github(Repo Orang Lain) => Github(repo kita)
+Remote == duplicate dari repo kita, agar yang di local dan yang di remote bisa sinkron
+
+Kasus 1: Repo di github != local
+- Cloning Repo Github
+ssh => harus melakukan konfigurasi keygen di laptop, antara github dan local dengan key
+https => copy linknya dan cari tau mau di simpan dimana
+- git clone link_https (jika download tidak terinisialisasi dengan github, jika menggunakan perintah git otomatis terinisialisasi)
+- git remote //origin => nama default untuk sebuah remote, bisa sebagai cek sudah connect ke github
+- git remote -v //verbose => melihat datany lebih detail lagi //muncul 2 alamat untuk fetch dan push
+- git push //menambahkan file commit di local ke remote
+ada kasus meminta untuk login github lagi, jadi jalankan $git config
+kalo pakai ssh tidak perlu pakai login lagi
+
+Kasus 2: local banyak sudah commit, tapi di github belum ada
+- Siapin Repo local dengan commit yang sudah ada
+- Buat repo di github dengan nama yang sama (jangan ceklis readme, jadi buat benar-benar kosong)
+chance existing repo
+- input perintah github ke terminal repo local
+  ^ git remote add origin link_repo //membuat remote
+  ^ git branch main //merubah dari master ke main
+  ^ git push -u origin main //push dari local ke github
+
+Kasus 3: kita rubah di local, sedangkan di github ada kolaborator merubah code di github
+- Local
+  ^ menambahkan file style.css dengan isi yang berbeda dengan github
+  ^ git add .//menambahkan ke staging area
+  ^ git commit -m ""//commit di local
+  ^ git push //akan mengalami error, karena di remote sudah ada file tersebut dengan isi yang berbeda
+  ^ git status //untuk mengecek commit local kita "sudah lebih maju dari 1 commit"
+  ^ git fetch //untuk mengetahui sudah sampai mana commit di remote
+  ^ git status //mengetahui commit local dan remote di cabang yang berbeda
+
+- Github
+  ^ menambahkan file style.css dengan isi yang berbeda dengan local
+  ^ commit di github
+
+ketika commit local dan commit remote berada di branch yang berbeda, maka kita harus pull
+- git pull //akan mengalami merge conflict, dan akan masuk ke codingan di vs code
+- after resolve, bisa dilakukan $git add .
+- git commit -m ""//commit local
+- git push //commit dikirim ke github
