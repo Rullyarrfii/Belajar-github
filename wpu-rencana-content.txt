@@ -3,7 +3,9 @@ RENCAN KONTEN WPU
 - JAVASCRIPT
   * ES6
   * Framework JAvascript
-- Struktur Data Dasar
+   ^ Angular
+   ^ React
 - PHP FRAMEWORK
+ ^ Laravel
 - INTERVIEW
 - VLOGS
