@@ -4,6 +4,7 @@ RENCAN KONTEN WPU
   * ES6
   * Framework JAvascript
    ^ Vue
+   ^ React
 - Struktur Data Dasar
 - PHP FRAMEWORK
  ^ Laravel
