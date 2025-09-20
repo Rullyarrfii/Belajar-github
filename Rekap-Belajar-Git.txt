@@ -21,7 +21,7 @@
 - git checkout 5digit_hash -- style.css //untuk mengembalikan sebuah commit style.css,lalu masuk ke staging area
 - git log --all --decorate --oneline --graph //visualisasi branch seperti di network github
 - alias graph="git log --all --decorate --oneline --graph" //hanya memanggil graph bisa memvisualisasikan
-- git checkout name_branch
+- git checkout name_branch, hanya 1 kali terminal
 
 3 Area pada repo git
 - Working Tree -> inisialisasi folder menjadi repository git, lalu akan memantau aktivitas repo (ada perubahan/tidak)
@@ -42,3 +42,15 @@ MERGE
   ^ harus memberikan pesan commitnya
 
 - git branch -d dosen //menghapus branch dosen (beda d dan D adalah jika D akan menghapus dalam kondisi apapun)
+
+
+MERGE Conflict bisa di resolve manual dengan memilih yang mau dirubah dari saran pada saat merge
+- after resolve, bisa melakukan save ke staging are (git add.)
+- lalu git commit
+
+Checkout to commit
+- git checkout 7hashing_commit //nanti ada dikondisi detached head/head yang lepas dari branchnya ketika mau mundur ke commit sebelumnya
+
+Study Case:
+- membuat branch pada checkout commit sebelumnya
+    ^ git branch test //membuat branch test di commit sebelumnya
