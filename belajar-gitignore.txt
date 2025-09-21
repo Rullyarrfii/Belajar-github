@@ -1,0 +1,12 @@
+dokumentasi := github.com/github/gitignore //code apa saja yang harus dimasukan kedalam gitignore
+Website membuat gitignore := gitignore.io (OS apa, Code Editor apa, Bahasa pemrograman apa) => copy dan save ke dalam .gitignore
+
+sebuah file yang disimpan kedalam repo agar ketika git add . tidak terbawa filenya di addnya
+- dibutuhkan agar file system kita tidak ikut terbawa, seperti file hidden ketika kita git add . akan ikut terbawa
+- menuliskan file apa saja yang tidak mau masuk ke dalam gitignore di vscode pada file .gitignore
+- bisa tidak memasukkan folder pada saat git add .
+- bisa tidak memasukkan semua file exe (*.exe)
+
+-gitignore digunakan apabila ada konfigurasi untuk local, misal bekerja dengan codeigniter (file .htaccsess - isinya konfigurasi local mesin, ada konfigurasi database untuk set local mesin)
+**bayangkan jika di push ke remote, remotenya menggunakan konfigurasi local pribadi, jika remote ada yang pull sc maka konfigurasi dari local pribadi, bukan konfigurasi lokal orang yang pullnya dan itu harus di ubah manual
+- abaikan file konfigurasi, agar yang digunakan file konfigurasi lokal masing masing
