@@ -45,3 +45,27 @@ ketika commit local dan commit remote berada di branch yang berbeda, maka kita h
 - after resolve, bisa dilakukan $git add .
 - git commit -m ""//commit local
 - git push //commit dikirim ke github
+
+
+Git Branch //kolaborasi antar remote
+- membuat branch di repo local, lalu commit ke remote kita, lalu pull request ke remote orang lain
+- Pull request -> agar disetujui branch kita
+**untuk kolaborator kita bisa lakukan fetch antara local dengan repo asli orang lain, baru push ke repo github jadi harus merge dan sama satu sama lain.
+
+- pastikan repo master sama dengan repo master aslinya
+- sebelum melakukan perubahan, buat branch terlebih dahulu mau di github atau di lokal
+- git checkout -b nama_branch //pindah lansung ke branch baru
+- baru ubah codenya
+- git status //untuk memastikan perubahan apa saja
+- git commit -am "" //commit ke repo local
+- graph //cek commit baru
+- git push origin features //push ke repo remote kita dengan tujuan branch features
+- setelah masuk ke repo remote kita, lakukan pull request di github //seperti pull request pada umumnya
+- jika pull request sudah di acc, samakan repo asli dengan repo master local
+- git fetch sandhikagalih //untuk mengecek perubahan di repo asli
+- git merge sandhikagalih/master //merge master to repo master pribadi local
+- samakan repo local dengan repo github
+- git push origin master
+- jika sudah ga butuh branch maka dihapus
+- git branch -b features //hapus di local saja
+- git push origin --delete features //hapus di repo github
