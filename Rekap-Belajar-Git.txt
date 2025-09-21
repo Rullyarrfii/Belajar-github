@@ -63,3 +63,17 @@ Git Pages
 - pilih branch yang ingin di tampilkan
 - action github untuk melihat sudah berhasil deploy atau belum
 - ctrl + Shift + R -> untuk refresh paksa halaman jika kode yang di perbarui tidak update
+
+
+Multiple Remote
+- menghubungkan 2 remote kedalam git local
+- fork repo orang lain ke repo github kita
+- clone repo fork kita kedalam git local (git clone link)//otomati remotenya sudah ada
+- sinkronisasi git local dengan remote repo orang lain dengan cara (git remote add name_github_yang_mau_diremote link repo)//name_github hanya untuk mempermudah agar mengetahui nama remotenya
+- git fetch name_remotenya //mengambil commit remot repo kedalam local git
+
+agar mengetahui repo orang lain mengalami perubahan kita harus fetch lalu graph.
+ketika repo orang lain mengalami update commit, maka harus lakukan merge
+- git merge sandhikagalih/master //melakukan merge git local ke remote sandhikagalih di branch master
+- kondisinya baru local dengan git remote asli/repo orang lain, git remote repo kita pribadi belum
+- git push //agar semua tersinkronasi
