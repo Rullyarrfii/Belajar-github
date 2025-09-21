@@ -1,0 +1,22 @@
+git bisa dihubungkan ke web hosting pribadi
+
+local -> Web Hosting => dilakukan dengan jadikan .zip baru upload via cpanel/control panel web hosting/FTP client(FileZilla)
+misal ada perubahan, ubah dlu di local baru upload ulang
+
+local -> init git -> github remote -> sinkron dulu di github -> baru upload ke web hosting -> initialisai web hosting agar nge pull ke github
+jika ada perubahan = pull dari github -> ubah di local -> commit dan push -> upload ke web hosting
+
+web hosting
+- all features
+- git version control
+- catat clone url
+- repository path: public_html
+- repository name: biarkan sama seperti di github
+- create
+manage -> kelola branch -> ganti name _repo -> pull dari githubnya
+
+jika mau di update, baiknya buat branch terlebih dahulu
+
+pull di web hosting akan muncul ke commit terakhir
+
+**akan masuk ke public html
