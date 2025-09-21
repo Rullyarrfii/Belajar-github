@@ -63,6 +63,7 @@ Git Pages
 - pilih branch yang ingin di tampilkan
 - action github untuk melihat sudah berhasil deploy atau belum
 - ctrl + Shift + R -> untuk refresh paksa halaman jika kode yang di perbarui tidak update
+- bisa kunjung github.com/github/pages //dokumentasi github pages
 
 
 Multiple Remote
