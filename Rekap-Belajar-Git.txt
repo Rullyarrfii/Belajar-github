@@ -54,3 +54,12 @@ Checkout to commit
 Study Case:
 - membuat branch pada checkout commit sebelumnya
     ^ git branch test //membuat branch test di commit sebelumnya
+
+
+Git Pages
+- membuat website menjadi web hosting dengan github pages
+- membuat repository remote dengan name repository (name_github.github.io) //dengan repo ada github.io tidak perlu mengaktifkan gihub pages/otomatis aktif
+- aktifkan git hub pages //bagi yang name repositorynya tidak pakai github.io
+- pilih branch yang ingin di tampilkan
+- action github untuk melihat sudah berhasil deploy atau belum
+- ctrl + Shift + R -> untuk refresh paksa halaman jika kode yang di perbarui tidak update
