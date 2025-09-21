@@ -1,0 +1,22 @@
+cara untuk memilih git workflow
+
+merge == rebase //sama sama sebagai workflow merge dari branch ke master
+fast-forward merge -> tidak perlu menambahkan commit
+Three-way merge -> kondisi branch dan master tidak se line saat mau merge
+- Three-way merged bisa dilakukan dengan merge commit, tapi akan menghasilkan commit yang banyak, akan susah tracknya.
+idealnya branch dilakukan fast-forward merge supaya ga nambahin commit baru
+
+Rebase
+branch maju ke depan master terbaru dan branch tetap ada
+
+collaborators -> settings github -> input email -> add Collab -> acc collab (bisa dengan email invitation) //agar tidak meminta pull request terus
+setelah acc, bisa melakukan clone
+merubah file, pastikan dengan branch baru
+- sebelum merge kodenya, pastikan file masternya ter update/ bisa pull dulu sebelum merge
+- jika file master ada update, maka terjadi three-way merge
+- branch features di rebase //resolve
+- Rebase -> branch features -> git rebase master //hasilnya branch maju lebih depan dan harus melakukan rebase ke branch
+- jika branch lebih 2 commit dan agar masternya sejajar maka harus merge dari master ke branch, harus rebase sekali lagi
+- apabila saat rebase ada konflik itu bisa aja, maka harus resolve lebih dlu, baru rebase lagi
+- rebase sekali lagi -> git checkout master -> git rebase branch/features //agar master local merge dengan branch
+- git push -u origin main //push ke remote
