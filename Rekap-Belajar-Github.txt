@@ -7,4 +7,4 @@ Rekap Github
     ^ Merge Pull Request
     ^ Check Out/Pindah Branch/commit
     ^ Merge Conflict
-- Fork
+- Fork //membuat duplikat atau clone repo orang lain ke repo github
