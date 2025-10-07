@@ -10,3 +10,9 @@ sebuah file yang disimpan kedalam repo agar ketika git add . tidak terbawa filen
 -gitignore digunakan apabila ada konfigurasi untuk local, misal bekerja dengan codeigniter (file .htaccsess - isinya konfigurasi local mesin, ada konfigurasi database untuk set local mesin)
 **bayangkan jika di push ke remote, remotenya menggunakan konfigurasi local pribadi, jika remote ada yang pull sc maka konfigurasi dari local pribadi, bukan konfigurasi lokal orang yang pullnya dan itu harus di ubah manual
 - abaikan file konfigurasi, agar yang digunakan file konfigurasi lokal masing masing
+
+
+Menambahkan file .gitignore saat file lain sudah ada
+- Buat file .gitignore
+- Edit file dan tambahkan pola file
+- Simpan perubahan dan commit
