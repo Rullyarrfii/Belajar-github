@@ -78,3 +78,19 @@ ketika repo orang lain mengalami update commit, maka harus lakukan merge
 - git merge sandhikagalih/master //melakukan merge git local ke remote sandhikagalih di branch master
 - kondisinya baru local dengan git remote asli/repo orang lain, git remote repo kita pribadi belum
 - git push //agar semua tersinkronasi
+
+Cara git local di push ke git remote?
+- git push origin main:development
+origin: Nama remote kamu.
+main: Nama branch asal (lokal kamu).
+development: Nama branch tujuan (yang ada di server/GitHub/GitLab
+- git pull origin development
+Jika branch development di remote sudah berisi kode yang tidak ada di main lokal kamu, Git akan menolak push tersebut (rejected). Kamu perlu menarik (pull) perubahannya dulu:
+- git push -u origin main:development
+Set Upstream (Opsional): Jika kamu ingin agar setiap kali mengetik git push saat berada di branch main otomatis masuk ke development, gunakan perintah ini sekali saja:
+-Cek Status: Untuk memastikan branch mana yang terhubung ke mana, kamu bisa cek dengan: git branch -vv
+- Menggunakan Perintah git branch (Paling Direkomendasikan)
+Jika kamu sudah berada di branch main dan ingin menghubungkannya ke origin/development, jalankan perintah ini:
+#Bash
+git branch --set-upstream-to=origin/development
+Setelah ini dijalankan, kamu cukup mengetik git pull atau git push saja tanpa perlu menulis nama remote dan branch lagi.
