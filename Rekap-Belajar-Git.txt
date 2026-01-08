@@ -94,3 +94,11 @@ Jika kamu sudah berada di branch main dan ingin menghubungkannya ke origin/devel
 #Bash
 git branch --set-upstream-to=origin/development
 Setelah ini dijalankan, kamu cukup mengetik git pull atau git push saja tanpa perlu menulis nama remote dan branch lagi.
+
+
+- git push -u origin fitur-baru
+* Git akan membuat branch baru bernama fitur-baru di remote origin.
+* Flag -u akan menghubungkan (tracking) branch lokal dengan remote tersebut.
+* Ke depannya, kamu cukup mengetik git push atau git pull saja.
+- git push -u origin main:development
+* Hasilnya: Di GitHub/GitLab kamu akan muncul branch baru bernama development yang isinya sama persis dengan main lokal kamu saat ini.
